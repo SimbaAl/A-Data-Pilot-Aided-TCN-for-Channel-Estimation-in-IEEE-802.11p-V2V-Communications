@@ -1,8 +1,4 @@
-## 104 subcarriers are used in this script instead of 96 that are used in the No_Scaler,py script. Everything else is the same
-#in this script: I have repeated everything done in the close_.py script except i have chosen to remove a standard scaler
 
-#I have used data subcarriers as time steps which is the second dimension. ( 16000, 96,50)
-# I have corrected the post processing: 
 '''For the first OFDM symbol (j == 0), the channel estimate hf_DL_TCN[i, j, :] is initialized with the output of the TCN model hf_out.
 For the remaining OFDM symbols (j > 0), we follow the DPA procedure:
 y_eq = yf_d[i, j, :] / hf_DL_TCN[i, j-1, :] computes the equalized received symbol using the previous channel estimate.
